@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Microlead - Validation de formulaire Javascript</title>
+  </head>
+
+  <body>
+    <h1>Microlead - Validation de formulaire Javascript</h1>
+
+    <h2>S'inscrire</h2>
+
+    <form id="form">
+      <div>
+        <label for="name">Nom</label>
+        <input type="text" name="name" placeholder="John" />
+        <span id="error-name"></span>
+      </div>
+      <div>
+        <label for="email">Adresse mail</label>
+        <input type="text" name="email" placeholder="john.doe@email.com" />
+        <span id="error-email"></span>
+      </div>
+      <div>
+        <label for="password">Mot de passe</label>
+        <input type="password" name="password" />
+        <span id="error-password"></span>
+      </div>
+      <div>
+        <label for="confirm_password">Confirmer le mot de passe</label>
+        <input type="password" name="confirm_password" />
+        <span id="error-confirm-password"></span>
+      </div>
+      <button type="submit">S'inscrire</button>
+    </form>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
